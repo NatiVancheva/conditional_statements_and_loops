@@ -1,0 +1,19 @@
+first_string = input()
+second_string = input()
+for character_index in range(len(first_string)):
+    left_part = second_string[: character_index + 1]
+    right_part = first_string[character_index + 1:]
+    new_string = left_part + right_part
+    if first_string[character_index] != second_string[character_index]:
+         print(new_string)
+#range(start:end:step)
+#[start:end:step]
+#my_string = "alabalaportokala"
+#[start:end:step]
+#print(my_string[1:5:1]) laba
+#[start:end]
+#print(my_string[1:5]) laba
+#[:end]
+#print(my_string[:5]) alaba
+#[start:]
+#print(my_string[5:] laportokala
